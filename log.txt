@@ -1,0 +1,19 @@
+INFO:MODBUS_CLIENT:I am a fixture
+INFO:PREPARE:Testing Connection
+INFO:MODBUS_MASTER:Creating Modbus TCP Master
+INFO:MODBUS_MASTER:Connecting to Modbus Slave at 192.168.1.100:502
+INFO:PREPARE:Testing Connection
+INFO:MODBUS_MASTER:Closing Connection to Modbus Slave at 192.168.1.100:502
+INFO:MODBUS_MASTER:Creating Modbus TCP Master
+INFO:MODBUS_MASTER:Connecting to Modbus Slave at 192.168.1.100:502
+INFO:PREPARE:Testing Connection
+INFO:MODBUS_MASTER:Closing Connection to Modbus Slave at 192.168.1.100:502
+INFO:MODBUS_MASTER:Creating Modbus TCP Master
+INFO:MODBUS_MASTER:Connecting to Modbus Slave at 192.168.1.100:502
+INFO:MODBUS_TCP_MASTER:Reading Modbus Slave Holding register
+INFO:MODBUS_TCP_MASTER:Read: [0]
+INFO:MODBUS_MASTER:Closing Connection to Modbus Slave at 192.168.1.100:502
+INFO:MODBUS_MASTER:Creating Modbus TCP Master
+INFO:MODBUS_MASTER:Connecting to Modbus Slave at 192.168.1.100:502
+INFO:MODBUS_TCP_MASTER:Reading Modbus Slave Holding register
+INFO:MODBUS_MASTER:Closing Connection to Modbus Slave at 192.168.1.100:502
