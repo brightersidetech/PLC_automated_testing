@@ -25,7 +25,7 @@ def test_read_holding_registers():
         success = True
     assert(success)
 
-# reading Invalid holding register
+# reading Invalid holding registers
 def test_read_invalid_holding_register():
     success = False
     logger.info('Reading Invalid Modbus Slave Holding register')

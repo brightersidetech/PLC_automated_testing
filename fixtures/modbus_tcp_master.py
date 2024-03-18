@@ -7,9 +7,10 @@ __all__ = [
     'use_modbus_tcp_master'
 ]
 
-
+# Set logger
 logger = logging.getLogger('MODBUS_MASTER')
 
+# Fixture to create modbus TCP Client and prepare
 @pytest.fixture(scope='session', autouse=True)
 def use_modbus_tcp_master():
     logger.info('Creating Modbus TCP Master')
@@ -18,6 +19,7 @@ def use_modbus_tcp_master():
                                      unit_id=Env.modbus_slave_id,
                                      auto_open=False,
                                      auto_close=False)
+    # Connect to modbus slave
     logger.info(f'Connecting to Modbus Slave at {Env.modbus_slave_addr}:{Env.modbus_slave_port}')
     conn = modbus_tcp_master.open()
     assert(conn)
