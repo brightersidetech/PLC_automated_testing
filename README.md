@@ -5,7 +5,7 @@ Automated tests run on a separate device and are written in python using the pyt
 
 
 ### Test Architecture
-![alt text](misc/test_arch.PNG)
+![alt text](misc/test_arch.png)
 - Tests are written and run on a seperate device reffered to as the ```Test Host```
 - TheTest Host configures the ```Test Subject``` and then sets different test cases by setting different paramters on the Test Subject
 - Tests are written in python with help of the pytest Library
