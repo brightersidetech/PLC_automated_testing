@@ -17,3 +17,56 @@ INFO:MODBUS_MASTER:Creating Modbus TCP Master
 INFO:MODBUS_MASTER:Connecting to Modbus Slave at 192.168.1.100:502
 INFO:MODBUS_TCP_MASTER:Reading Modbus Slave Holding register
 INFO:MODBUS_MASTER:Closing Connection to Modbus Slave at 192.168.1.100:502
+INFO:MODBUS_MASTER:Creating Modbus TCP Master
+INFO:MODBUS_MASTER:Connecting to Modbus Slave at 192.168.1.100:502
+INFO:MODBUS_MASTER:Creating Modbus TCP Master
+INFO:MODBUS_MASTER:Connecting to Modbus Slave at 10.6.129.81:502
+INFO:MODBUS_TCP_TESTER:Reading Modbus Slave Holding register
+INFO:MODBUS_TCP_TESTER:Read data: [0]
+INFO:MODBUS_TCP_TESTER:Reading Multiple Modbus Slave Holding registers
+INFO:MODBUS_TCP_TESTER:Read data: [0, 0, 0, 0]
+INFO:MODBUS_TCP_TESTER:Reading Invalid Modbus Slave Holding register
+INFO:MODBUS_MASTER:Closing Connection to Modbus Slave at 10.6.129.81:502
+INFO:MODBUS_MASTER:Creating Modbus TCP Master
+INFO:MODBUS_MASTER:Connecting to Modbus Slave at 10.6.129.81:502
+INFO:MODBUS_MASTER:Closing Connection to Modbus Slave at 10.6.129.81:502
+INFO:MODBUS_MASTER:Creating Modbus TCP Master
+INFO:MODBUS_MASTER:Connecting to Modbus Slave at 10.6.129.81:502
+INFO:OPCUA_CLIENT:Connecting to OPC UA Server at 10.6.129.81:4840
+INFO:opcua.client.ua_client.Socket:opening connection
+INFO:opcua.client.ua_client.Socket:Thread started
+DEBUG:opcua.uaprotocol:Waiting for header
+INFO:opcua.uaprotocol:received header: Header(type:b'ACK', chunk_type:b'F', body_size:20, channel:0)
+DEBUG:opcua.uaprotocol:Waiting for header
+INFO:opcua.client.ua_client.Socket:open_secure_channel
+DEBUG:opcua.client.ua_client.Socket:Sending: OpenSecureChannelRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader}, Parameters:{self.Parameters})
+INFO:opcua.uaprotocol:received header: Header(type:b'OPN', chunk_type:b'F', body_size:123, channel:1)
+DEBUG:opcua.uaprotocol:Waiting for header
+INFO:opcua.client.ua_client:create_session
+DEBUG:opcua.client.ua_client.Socket:Sending: CreateSessionRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader}, Parameters:{self.Parameters})
+INFO:opcua.uaprotocol:received header: Header(type:b'MSG', chunk_type:b'F', body_size:1014, channel:1)
+DEBUG:opcua.uaprotocol:Waiting for header
+DEBUG:opcua.client.ua_client:CreateSessionResponse(TypeId:{self.TypeId}, ResponseHeader:{self.ResponseHeader}, Parameters:{self.Parameters})
+DEBUG:opcua.client.client:starting keepalive thread with period of 2520000.0 milliseconds
+INFO:opcua.client.ua_client:activate_session
+DEBUG:opcua.client.ua_client.Socket:Sending: ActivateSessionRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader}, Parameters:{self.Parameters})
+INFO:opcua.uaprotocol:received header: Header(type:b'MSG', chunk_type:b'F', body_size:40, channel:1)
+DEBUG:opcua.uaprotocol:Waiting for header
+WARNING:opcua.client.ua_client.Socket:ServiceFault from server received  in response to ActivateSessionRequest
+DEBUG:opcua.client.client:stoping keepalive thread
+DEBUG:opcua.client.client:keepalive thread has stopped
+INFO:opcua.client.ua_client:close_session
+DEBUG:opcua.client.ua_client.Socket:Sending: CloseSessionRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader}, DeleteSubscriptions:{self.DeleteSubscriptions})
+INFO:opcua.uaprotocol:received header: Header(type:b'MSG', chunk_type:b'F', body_size:40, channel:1)
+DEBUG:opcua.uaprotocol:Waiting for header
+WARNING:opcua.client.ua_client.Socket:ServiceFault from server received  in response to CloseSessionRequest
+INFO:opcua.client.ua_client.Socket:close_secure_channel
+DEBUG:opcua.client.ua_client.Socket:Sending: CloseSecureChannelRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader})
+INFO:opcua.client.ua_client.Socket:Request to close socket received
+INFO:opcua.client.ua_client.Socket:Socket has closed connection
+INFO:opcua.client.ua_client.Socket:Cancelling request 5
+INFO:opcua.client.ua_client.Socket:Socket closed, waiting for receiver thread to terminate...
+INFO:opcua.client.ua_client.Socket:Thread ended
+INFO:opcua.client.ua_client.Socket:Done closing socket: Receiving thread terminated, socket disconnected
+INFO:OPCUA_CLIENT:Could not connect to OPC UA Server at 10.6.129.81:4840
+INFO:MODBUS_MASTER:Closing Connection to Modbus Slave at 10.6.129.81:502
